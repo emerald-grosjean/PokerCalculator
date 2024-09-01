@@ -5,9 +5,7 @@ VisualStudioVersion = 17.12.35209.166
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokerCalculator", "PokerCalculator\PokerCalculator.csproj", "{7CF1736C-EBB4-4764-A465-714D6AF016E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandEvaluator", "PokerEval\src\PokerEval\HandEvaluator\HandEvaluator.csproj", "{4344EBF8-9C73-4266-A209-9753030D9108}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokerEvalApi", "PokerEval\src\PokerEvalApi\PokerEvalApi.csproj", "{C36BD1AB-C802-4409-B6F9-F71F319234B6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandEvaluator", "HandEvaluator\HandEvaluator.csproj", "{7342E2B9-C562-47BE-88B3-02811F9F285C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +17,10 @@ Global
 		{7CF1736C-EBB4-4764-A465-714D6AF016E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CF1736C-EBB4-4764-A465-714D6AF016E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CF1736C-EBB4-4764-A465-714D6AF016E7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4344EBF8-9C73-4266-A209-9753030D9108}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4344EBF8-9C73-4266-A209-9753030D9108}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4344EBF8-9C73-4266-A209-9753030D9108}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4344EBF8-9C73-4266-A209-9753030D9108}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C36BD1AB-C802-4409-B6F9-F71F319234B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C36BD1AB-C802-4409-B6F9-F71F319234B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C36BD1AB-C802-4409-B6F9-F71F319234B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C36BD1AB-C802-4409-B6F9-F71F319234B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7342E2B9-C562-47BE-88B3-02811F9F285C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7342E2B9-C562-47BE-88B3-02811F9F285C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7342E2B9-C562-47BE-88B3-02811F9F285C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7342E2B9-C562-47BE-88B3-02811F9F285C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokerCalculator", "PokerCal
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandEvaluator", "PokerEval\src\PokerEval\HandEvaluator\HandEvaluator.csproj", "{4344EBF8-9C73-4266-A209-9753030D9108}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokerEvalApi", "PokerEval\src\PokerEvalApi\PokerEvalApi.csproj", "{C36BD1AB-C802-4409-B6F9-F71F319234B6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{4344EBF8-9C73-4266-A209-9753030D9108}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4344EBF8-9C73-4266-A209-9753030D9108}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4344EBF8-9C73-4266-A209-9753030D9108}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C36BD1AB-C802-4409-B6F9-F71F319234B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C36BD1AB-C802-4409-B6F9-F71F319234B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C36BD1AB-C802-4409-B6F9-F71F319234B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C36BD1AB-C802-4409-B6F9-F71F319234B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

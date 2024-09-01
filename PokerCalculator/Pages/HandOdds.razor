@@ -75,11 +75,11 @@
     {
         [Required]
         [RegularExpression(Patterns.PocketPattern)]
-        public string? Pocket1 { get; set; }
+        public string Pocket1 { get; set; } = "AsAh";
 
         [Required]
         [RegularExpression(Patterns.PocketPattern)]
-        public string? Pocket2 { get; set; }
+        public string Pocket2 { get; set; } = "7d2c";
     }
 
     public class HandOddsOutputModel : HandOddsInputModel

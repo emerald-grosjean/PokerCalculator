@@ -7,9 +7,25 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="..\PokerEval\src\PokerEvalApi\Const\Patterns.cs" Link="Const\Patterns.cs" />
+    <Compile Include="..\PokerEval\src\PokerEvalApi\Models\PocketModel.cs" Link="Models\PocketModel.cs" />
+    <Compile Include="..\PokerEval\src\PokerEvalApi\Models\PokerOddsRequest.cs" Link="Models\PokerOddsRequest.cs" />
+    <Compile Include="..\PokerEval\src\PokerEvalApi\Models\PokerOddsResponse.cs" Link="Models\PokerOddsResponse.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.7" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="8.0.7" PrivateAssets="all" />
     <PackageReference Include="PublishSPAforGitHubPages.Build" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PokerEval\src\PokerEval\HandEvaluator\HandEvaluator.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Const\" />
+    <Folder Include="Models\" />
   </ItemGroup>
 
 </Project>

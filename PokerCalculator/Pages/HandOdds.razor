@@ -1,0 +1,91 @@
+﻿@page "/hand-odds"
+
+@using PokerEvalApi.Models;
+@using System.ComponentModel.DataAnnotations
+@using PokerEvalApi.Const;
+
+<PageTitle>Hand odds</PageTitle>
+
+<h1>Hand odds</h1>
+
+<EditForm Model="Model" OnValidSubmit="Submit" FormName="HandOddsForm">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div>
+        <label>
+            Pocket1:
+            <InputText @bind-Value="Model!.Pocket1" />
+        </label>
+    </div>
+    <div>
+        <label>
+            Pocket2:
+            <InputText @bind-Value="Model!.Pocket2" />
+        </label>
+    </div>
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+</EditForm>
+
+@if (Display != null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>@nameof(PokerOddsResponseItem.Pocket)</th>
+                <th>@nameof(PokerOddsResponseItem.WinRate)</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Display.Pockets)
+            {
+                <tr>
+                    <td>@item.Pocket</td>
+                    <td>@item.WinRate.ToString("P2")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    [SupplyParameterFromForm]
+    private HandOddsInputModel? Model { get; set; } = new();
+
+    private PokerOddsResponse? Display { get; set; }
+
+    private void Submit()
+    {
+        if (Model == null) return;
+
+        var request = new PokerOddsRequest()
+        {
+            Pockets = [
+                new() { Pocket = Model.Pocket1!  },
+                new() { Pocket = Model.Pocket2!  },
+            ],
+        };
+
+        Display = Utils.HandOddsUtils.CalculateHandOdds(request);
+    }
+
+    public class HandOddsInputModel
+    {
+        [Required]
+        [RegularExpression(Patterns.PocketPattern)]
+        public string? Pocket1 { get; set; }
+
+        [Required]
+        [RegularExpression(Patterns.PocketPattern)]
+        public string? Pocket2 { get; set; }
+    }
+
+    public class HandOddsOutputModel : HandOddsInputModel
+    {
+        public double? Player1WinRates { get; set; }
+
+        public double? Player2WinRates { get; set; }
+    }
+}

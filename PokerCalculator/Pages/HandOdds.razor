@@ -31,10 +31,14 @@
         </label>
     </div>
     <div>
-        <button type="submit">Calculate</button>
+        <button type="submit" disabled="@isCalculating">Calculate</button>
     </div>
 </EditForm>
 
+@if (isCalculating)
+{
+    <p><em>Calculating...</em></p>
+}
 @if (Display != null)
 {
     <table class="table">
@@ -68,20 +72,34 @@
 
     private PokerOddsResponse? Display { get; set; }
 
-    private void Submit()
+    private bool isCalculating = false;
+
+    private async Task Submit()
     {
         if (Model == null) return;
 
-        var request = new PokerOddsRequest()
-        {
-            Pockets = [
-                new() { Pocket = Model.Pocket1!  },
-                new() { Pocket = Model.Pocket2!  },
-            ],
-            Board = Model.Board,
-        };
+        isCalculating = true;
 
-        Display = Utils.HandOddsUtils.CalculateHandOdds(request);
+        try
+        {
+            var request = new PokerOddsRequest()
+            {
+                Pockets = [
+                    new() { Pocket = Model.Pocket1!  },
+                    new() { Pocket = Model.Pocket2!  },
+                ],
+                Board = Model.Board,
+            };
+
+            Display = await Task.Run(() =>
+            {
+                return Utils.HandOddsUtils.CalculateHandOdds(request);
+            });
+        }
+        finally
+        {
+            isCalculating = false;
+        }
     }
 
     public class HandOddsInputModel

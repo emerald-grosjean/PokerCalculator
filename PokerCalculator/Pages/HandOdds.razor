@@ -76,6 +76,8 @@
 
     private async Task Submit()
     {
+        Item = null;
+
         if (Model == null) return;
 
         isCalculating = true;

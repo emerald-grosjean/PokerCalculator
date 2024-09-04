@@ -57,11 +57,4 @@ public partial class HandOdds
         [RegularExpression(Patterns.PocketPattern)]
         public string Pocket2 { get; set; } = "7d2c";
     }
-
-    public class HandOddsOutputModel : HandOddsInputModel
-    {
-        public double? Player1WinRates { get; set; }
-
-        public double? Player2WinRates { get; set; }
-    }
 }

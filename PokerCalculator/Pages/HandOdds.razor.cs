@@ -12,7 +12,7 @@ public partial class HandOdds
 
     private PokerOddsResponse? Item { get; set; }
 
-    private bool isCalculating = false;
+    private bool IsCalculating = false;
 
     private async Task Submit()
     {
@@ -20,7 +20,7 @@ public partial class HandOdds
 
         if (Model == null) return;
 
-        isCalculating = true;
+        IsCalculating = true;
 
         try
         {
@@ -40,7 +40,7 @@ public partial class HandOdds
         }
         finally
         {
-            isCalculating = false;
+            IsCalculating = false;
         }
     }
 

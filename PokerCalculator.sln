@@ -5,7 +5,7 @@ VisualStudioVersion = 17.12.35209.166
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokerCalculator", "PokerCalculator\PokerCalculator.csproj", "{7CF1736C-EBB4-4764-A465-714D6AF016E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandEvaluator", "HandEvaluator\HandEvaluator.csproj", "{7342E2B9-C562-47BE-88B3-02811F9F285C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandEvaluator", "PokerEval\src\PokerEval\HandEvaluator\HandEvaluator.csproj", "{0FF1776E-AA29-4FF9-AA24-CDB28A625903}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{7CF1736C-EBB4-4764-A465-714D6AF016E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CF1736C-EBB4-4764-A465-714D6AF016E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CF1736C-EBB4-4764-A465-714D6AF016E7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7342E2B9-C562-47BE-88B3-02811F9F285C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7342E2B9-C562-47BE-88B3-02811F9F285C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7342E2B9-C562-47BE-88B3-02811F9F285C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7342E2B9-C562-47BE-88B3-02811F9F285C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FF1776E-AA29-4FF9-AA24-CDB28A625903}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FF1776E-AA29-4FF9-AA24-CDB28A625903}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FF1776E-AA29-4FF9-AA24-CDB28A625903}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FF1776E-AA29-4FF9-AA24-CDB28A625903}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

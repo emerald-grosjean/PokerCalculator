@@ -1,6 +1,6 @@
 # PokerCalculator
 
-![image](https://github.com/user-attachments/assets/8d15ed0c-fa67-43e8-80cd-797f3e65a8df)
+![image](https://github.com/user-attachments/assets/97d9cfc7-a407-4143-acc9-69cad1eea174)
 
 ## Poker hand odds calculator running on GitHub Pages
 

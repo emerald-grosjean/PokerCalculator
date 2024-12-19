@@ -52,10 +52,12 @@
             }
         </tbody>
     </table>
-    <div>
-        <label>
-            Board:
-            @Item.Board
-        </label>
-    </div>
+    @if (!string.IsNullOrEmpty(Item.Board)) {
+        <div>
+            <label>
+                Board:
+                @Item.Board
+            </label>
+        </div>
+    }
 }
